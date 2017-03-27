@@ -14,9 +14,7 @@ import { SecondPageModule } from "../pages/second-page/second-page.module";
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp, {
-      preloadModules: true
-    }),
+    IonicModule.forRoot(MyApp),
     HomePageModule,
     SecondPageModule
   ],
