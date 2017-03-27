@@ -6,6 +6,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { MyApp } from './app.component';
 import { HomePageModule } from '../pages/home/home.module';
+import { SecondPageModule } from "../pages/second-page/second-page.module";
 
 @NgModule({
   declarations: [
@@ -13,8 +14,11 @@ import { HomePageModule } from '../pages/home/home.module';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp),
-    HomePageModule
+    IonicModule.forRoot(MyApp, {
+      preloadModules: true
+    }),
+    HomePageModule,
+    SecondPageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [

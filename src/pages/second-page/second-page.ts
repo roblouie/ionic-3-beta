@@ -2,17 +2,16 @@ import { Component } from '@angular/core';
 
 import { NavController } from 'ionic-angular';
 import {IonicPage} from "ionic-angular/index";
-import {SecondPage} from "../second-page/second-page";
 
 @IonicPage()
 @Component({
-  selector: 'page-home',
-  templateUrl: 'home.html'
+  selector: 'second-page',
+  templateUrl: 'second-page.html'
 })
-export class HomePage {
+export class SecondPage {
 
   constructor(public navCtrl: NavController) {
-    navCtrl.push('SecondPage');
+    
   }
 
 }
