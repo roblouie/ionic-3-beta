@@ -5,8 +5,6 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { MyApp } from './app.component';
-import { HomePageModule } from '../pages/home/home.module';
-import { SecondPageModule } from "../pages/second-page/second-page.module";
 
 @NgModule({
   declarations: [
@@ -15,8 +13,6 @@ import { SecondPageModule } from "../pages/second-page/second-page.module";
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    HomePageModule,
-    SecondPageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
