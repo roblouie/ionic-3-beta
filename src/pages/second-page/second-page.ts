@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
-
-import { NavController } from 'ionic-angular';
-import {IonicPage} from "ionic-angular/index";
+import { NavController, IonicPage } from 'ionic-angular';
 
 @IonicPage()
 @Component({
@@ -9,9 +7,5 @@ import {IonicPage} from "ionic-angular/index";
   templateUrl: 'second-page.html'
 })
 export class SecondPage {
-
-  constructor(public navCtrl: NavController) {
-    
-  }
-
+  constructor(public navCtrl: NavController) {}
 }
